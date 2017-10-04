@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="30" >
+    <meta http-equiv="refresh" content="1" >
     <link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <style type='text/css'>
 * {
@@ -67,6 +67,8 @@ main h1.down {
   background-color: rgb(208, 2, 27);
 }
 main h2 {
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(182, 182, 182);
   color: rgb(0, 103, 102);
   font-size: 28px;
   font-weight: 400;
@@ -74,7 +76,6 @@ main h2 {
   width: 100%;
 }
 main ul {
-  border-top: 2px solid rgb(182, 182, 182);
   list-style: none;
   margin: 0;
   width: 100%;
@@ -114,7 +115,7 @@ main h3 {
   font-size: 18px;
   justify-content: space-between;
   margin: 0 16px 14px;
-  padding: 0 10px 8px;
+  padding: 8px 10px 8px;
   width: 100%;
 }
 main h3 .inProgress {
@@ -124,6 +125,7 @@ main h3 .inProgress {
 }
 main .maintenanceStatus {
   margin: 0 27px;
+  padding-bottom: 20px;
 }
 main h4 {
   font-size: 16px;
@@ -157,35 +159,45 @@ function updateTime() {
         <h1 class="up">All systems operational.</h1>
         <h1 class="down hide">Experiencing some issues.</h1>
         <div class="lastUpdated">
-          <p>Page last refreshed on <span id="refreshTime">Tuesday, October 4, 2017</span></p>
+          <p>Page last refreshed on <span id="refreshTime"></span></p>
         </div>
         <h2>Systems</h2>
         <ul>
           <li>
             <span>Traverse</span>
             <span class="status up">All operational</span>
+            <span class="status down hide">Some outages</span>
           </li>
           <li class="hide">
-            <span>Traverse</span>
+            <span>Compass Cloud</span>
+            <span class="status up hide">All operational</span>
             <span class="status down">Some outages</span>
           </li>
         </ul>
         <h2>Scheduled Maintenance</h2>
-          <h3>
-            None
-          </h3>
-        <span class="hide">
-          <h3>
-            05/06/2017 4:36 AM
-            <span class="inProgress">
-              In Progress
-            </span>
-          </h3>
-          <div class="maintenanceStatus">
-            <h4>Server is restarting</h4>
-            <p>We are currently restarting the server fleet to apply a security update. Downtime should be around 5 minutes.</p>
-          </div>
-        </span>
+        <h3>
+          No upcoming scheduled maintenance.
+        </h3>
+        <h3 class="hide">
+          05/06/2017 4:36 AM
+          <span class="inProgress">
+            In Progress
+          </span>
+        </h3>
+        <div class="maintenanceStatus hide">
+          <h4>Server is restarting</h4>
+          <p>We are currently restarting the server fleet to apply a security update. Downtime should be around 5 minutes.</p>
+        </div>
+        <h3 class="hide">
+          05/06/2017 4:36 AM
+          <span class="inProgress hide">
+            In Progress
+          </span>
+        </h3>
+        <div class="maintenanceStatus hide">
+          <h4>Server is restarting</h4>
+          <p>We are currently restarting the server fleet to apply a security update. Downtime should be around 5 minutes.</p>
+        </div>
       </div>
     </main>
     <footer>
