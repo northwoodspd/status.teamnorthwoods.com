@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta http-equiv="refresh" content="30" >
     <link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <style type='text/css'>
 * {
@@ -138,8 +139,14 @@ footer .container {
   justify-content: center;
 }
     </style>
+    <script type="text/javascript">
+function updateTime() {
+  var refreshTimeElement = document.getElementById("refreshTime");
+  refreshTimeElement.innerHTML = new Date().toLocaleDateString() + " at " + new Date().toLocaleTimeString();
+}
+    </script>
   </head>
-  <body>
+  <body onload="updateTime();">
     <header>
       <div class="container">
         <img src='images/logoWhite.png' alt='Northwoods' />
@@ -150,7 +157,7 @@ footer .container {
         <h1 class="up">All systems operational.</h1>
         <h1 class="down hide">Experiencing some issues.</h1>
         <div class="lastUpdated">
-          <p>Last updated on Tuesday, October 3, 2017</p>
+          <p>Page last refreshed on <span id="refreshTime">Tuesday, October 4, 2017</span></p>
         </div>
         <h2>Systems</h2>
         <ul>
