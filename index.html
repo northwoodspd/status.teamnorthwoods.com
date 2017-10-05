@@ -156,6 +156,11 @@ function updateTime() {
     </header>
     <main>
       <div class="container">
+<!--
+# If there is an incident in progress the "hide" class should be applied
+# to the "all systems operational" line and removed from the "experiencing
+# some issues" line
+-->
         <h1 class="up">All systems operational.</h1>
         <h1 class="down hide">Experiencing some issues.</h1>
         <div class="lastUpdated">
@@ -163,11 +168,20 @@ function updateTime() {
         </div>
         <h2>Systems</h2>
         <ul>
+<!--
+# If there is an incident in progress the "hide" class should be applied
+# to the "all operational" line and removed from the "some outages" line
+-->
           <li>
             <span>Traverse</span>
             <span class="status up">All operational</span>
             <span class="status down hide">Some outages</span>
           </li>
+<!--
+# This is an example of an additional system whose status may eventually
+# be communicated via this status page.  To display it (in future) remove
+# the "hide" class
+-->
           <li class="hide">
             <span>Compass Cloud</span>
             <span class="status up hide">All operational</span>
@@ -175,25 +189,51 @@ function updateTime() {
           </li>
         </ul>
         <h2>Scheduled Maintenance</h2>
+<!--
+# When there is upcoming maintenance add the "hide" class to the h3 tag, e.g.
+# <h3 class="hide"> to hide the message about no upcoming maintenance. Remove
+# the "hide" class when the maintenance is complete and there is no upcoming
+# maintenance
+-->
         <h3>
           No upcoming scheduled maintenance.
         </h3>
-        <h3 class="hide">
-          05/06/2017 4:36 AM
-          <span class="inProgress">
-            In Progress
-          </span>
-        </h3>
-        <div class="maintenanceStatus hide">
-          <h4>Server is restarting</h4>
-          <p>We are currently restarting the server fleet to apply a security update. Downtime should be around 5 minutes.</p>
-        </div>
+<!--
+# Maintenance - the date/time header part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the h3 tag) AND from the message part below. When the
+# maintenance is actually in progress, remove the "hide" class from the
+# span tag.
+-->
         <h3 class="hide">
           05/06/2017 4:36 AM
           <span class="inProgress hide">
             In Progress
           </span>
         </h3>
+<!--
+# Maintenance - the message part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the div tag).
+-->
+        <div class="maintenanceStatus hide">
+          <h4>Server is restarting</h4>
+          <p>We are currently restarting the server fleet to apply a security update. Downtime should be around 5 minutes.</p>
+        </div>
+<!--
+# Maintenance - the date/time part.
+# Example of second upcoming maintenance (hidden).
+-->
+        <h3 class="hide">
+          05/06/2017 4:36 AM
+          <span class="inProgress hide">
+            In Progress
+          </span>
+        </h3>
+<!--
+# Maintenance - the message part.
+# Example of second upcoming maintenance (hidden).
+-->
         <div class="maintenanceStatus hide">
           <h4>Server is restarting</h4>
           <p>We are currently restarting the server fleet to apply a security update. Downtime should be around 5 minutes.</p>
