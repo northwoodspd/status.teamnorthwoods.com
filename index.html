@@ -195,7 +195,7 @@ function updateTime() {
 # the "hide" class when the maintenance is complete and there is no upcoming
 # maintenance
 -->
-        <h3 class="">
+        <h3 class="hide">
           No upcoming scheduled maintenance.
         </h3>
 <!--
@@ -205,8 +205,8 @@ function updateTime() {
 # maintenance is actually in progress, remove the "hide" class from the
 # span tag.
 -->
-        <h3 class="hide" >
-          12/6/2017 9:00 PM - 11:00PM EST
+        <h3 class="" >
+          12/14/2017 9:00 PM - 10:00PM EST
           <span class="hide inProgress">
             In Progress
           </span>
@@ -216,9 +216,9 @@ function updateTime() {
 # To show upcoming maintenance, remove the "hide" class from this date/time
 # header part (the div tag).
 -->
-        <div class="hide maintenanceStatus">
-          <h4>Database Upgrade</h4>
-          <p>Traverse will be unavailable for about 20 minutes to upgrade the primary database server.</p>
+        <div class="maintenanceStatus">
+          <h4>Network Upgrade</h4>
+          <p>Traverse will be unavailable for about 20 minutes to upgrade the networking overlay.</p>
         </div>
 <!--
 # Maintenance - the date/time part.
