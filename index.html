@@ -190,23 +190,14 @@ function updateTime() {
         </ul>
         <h2>Scheduled Maintenance</h2>
 <!--
-# When there is upcoming maintenance add the "hide" class to the h3 tag, e.g.
-# <h3 class="hide"> to hide the message about no upcoming maintenance. Remove
-# the "hide" class when the maintenance is complete and there is no upcoming
-# maintenance
--->
-        <h3 class="">
-          No upcoming scheduled maintenance.
-        </h3>
-<!--
 # Maintenance - the date/time header part.
 # To show upcoming maintenance, remove the "hide" class from this date/time
 # header part (the h3 tag) AND from the message part below. When the
 # maintenance is actually in progress, remove the "hide" class from the
 # span tag.
 -->
-        <h3 class="hide" >
-          12/14/2017 9:00 PM - 10:00PM EST
+        <h3 class="" >
+          1/11/2018 9:00 PM - 10:00 PM EST
           <span class="inProgress hide">
             In Progress
           </span>
@@ -216,33 +207,33 @@ function updateTime() {
 # To show upcoming maintenance, remove the "hide" class from this date/time
 # header part (the div tag).
 -->
-        <div class="maintenanceStatus hide">
-          <h4>Network Upgrade</h4>
-          <p>Traverse will be unavailable for about 20 minutes to upgrade the networking overlay.</p>
+        <div class="maintenanceStatus">
+          <h4>Security Updates</h4>
+          <p>Traverse will be unavailable for about 60 minutes while security updates are applied.</p>
         </div>
 <!--
 # Maintenance - the date/time part.
-# Example of second upcoming maintenance (hidden).
+# Daily maintenance window for backups.
 -->
-        <h3 class="hide">
-          12/04/2017 9:00 PM - 10:00 PM
+        <h3 class="">
+          Daily 11:00 PM - 11:30 PM EST
           <span class="hide inProgress">
             In Progress
           </span>
         </h3>
 <!--
 # Maintenance - the message part.
-# Example of second upcoming maintenance (hidden).
+# This part should always be shown since we have a daily maintenance windows from 11-11:30PM EST
 -->
-        <div class="hide maintenanceStatus">
-          <h4>Server is unavailable</h4>
-          <p>We will deploy security patches. Downtime should be around 15 minutes per server.</p>
+        <div class="maintenanceStatus">
+          <h4>System Backups</h4>
+          <p>Traverse will be unavailable for about 15 minutes in this windows to perform system backups.</p>
         </div>
       </div>
     </main>
     <footer>
       <div class="container">
-        <p>Copyright &copy; 2017, Northwoods Consulting Partners, Inc., All Rights Reserved</p>
+        <p>Copyright &copy; 2018, Northwoods Consulting Partners, Inc., All Rights Reserved</p>
       </div>
     </footer>
   </body>
