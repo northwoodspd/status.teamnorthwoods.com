@@ -229,6 +229,28 @@ function updateTime() {
           <h4>System Backups</h4>
           <p>Traverse will be unavailable for about 15 minutes in this maintenance window to perform system backups.</p>
         </div>
+<!--
+# Maintenance - the date/time header part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the h3 tag) AND from the message part below. When the
+# maintenance is actually in progress, remove the "hide" class from the
+# span tag.
+-->
+        <h3 class="" >
+          1/17/2018 9:00 PM - 09:30 PM EST
+          <span class="inProgress hide">
+            In Progress
+          </span>
+        </h3>
+<!--
+# Maintenance - the message part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the div tag).
+-->
+        <div class="maintenanceStatus">
+          <h4>Software Updates</h4>
+          <p>Traverse will be unavailable for about 15 minutes while software components are updated.</p>
+        </div>
       </div>
     </main>
     <footer>
