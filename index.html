@@ -161,8 +161,8 @@ function updateTime() {
 # to the "all systems operational" line and removed from the "experiencing
 # some issues" line
 -->
-        <h1 class="up">All systems operational.</h1>
-        <h1 class="down hide">Experiencing some issues.</h1>
+        <h1 class="up hide">All systems operational.</h1>
+        <h1 class="down">Experiencing some issues.</h1>
         <div class="lastUpdated">
           <p>Page last refreshed on <span id="refreshTime"></span></p>
         </div>
@@ -174,8 +174,8 @@ function updateTime() {
 -->
           <li>
             <span>Traverse</span>
-            <span class="status up">All operational</span>
-            <span class="status down hide">Some outages</span>
+            <span class="status up hide">All operational</span>
+            <span class="status down">Some outages</span>
           </li>
 <!--
 # This is an example of an additional system whose status may eventually
@@ -189,6 +189,28 @@ function updateTime() {
           </li>
         </ul>
         <h2>Scheduled Maintenance</h2>
+<!--
+# Maintenance - the date/time header part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the h3 tag) AND from the message part below. When the
+# maintenance is actually in progress, remove the "hide" class from the
+# span tag.
+-->
+        <h3 class="">
+          4/4/2018 11:15 AM EST
+          <span class="inProgress hide">
+            In Progress
+          </span>
+        </h3>
+<!--
+# Maintenance - the message part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the div tag).
+-->
+        <div class="maintenanceStatus">
+          <h4>Backend Processing Issue</h4>
+          <p>Background processing of uploaded text is experiencing an outage.  Traverse is still available, content uploads and downloads and searching will work as expected.  However, Topic, Events and Mentions may not show up until after the outage is resolved.</p>
+        </div>
 <!--
 # Maintenance - the date/time header part.
 # To show upcoming maintenance, remove the "hide" class from this date/time
