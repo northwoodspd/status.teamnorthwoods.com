@@ -174,8 +174,8 @@ function updateTime() {
 -->
           <li>
             <span>Traverse</span>
-            <span class="status up">All operational</span>
-            <span class="status down hide">Some outages</span>
+            <span class="status up hide">All operational</span>
+            <span class="status down">Some outages</span>
           </li>
 <!--
 # This is an example of an additional system whose status may eventually
@@ -188,6 +188,29 @@ function updateTime() {
             <span class="status down hide">Some outages</span>
           </li>
         </ul>
+        <h2>Incidents</h2>
+<!--
+# Maintenance - the date/time header part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the h3 tag) AND from the message part below. When the
+# maintenance is actually in progress, remove the "hide" class from the
+# span tag.
+-->
+        <h3 class="">
+          02/15/2018
+          <span class="inProgress hide">
+            In Progress
+          </span>
+        </h3>
+<!--
+# Maintenance - the message part.
+# To show upcoming maintenance, remove the "hide" class from this date/time
+# header part (the div tag).
+-->
+        <div class="maintenanceStatus">
+          <h4>Delayed backend processing</h4>
+          <p>There is a ongoing problem importing updated cases, people, and organizations into Traverse from the source state and county systems.  This incident will be updated when it is resolved.</p>
+        </div>
         <h2>Scheduled Maintenance</h2>
 <!--
 # Maintenance - the date/time header part.
