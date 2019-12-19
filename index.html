@@ -163,8 +163,8 @@ function updateTime() {
 # to the "all systems operational" line and removed from the "experiencing
 # some issues" line
 -->
-        <h1 class="up hide">All systems operational.</h1>
-        <h1 class="down">Experiencing some issues.</h1>
+        <h1 class="up">All systems operational.</h1>
+        <h1 class="down hide">Experiencing some issues.</h1>
         <div class="lastUpdated">
           <p>Page last refreshed on <span id="refreshTime"></span></p>
         </div>
@@ -176,8 +176,8 @@ function updateTime() {
 -->
           <li>
             <span>Traverse</span>
-            <span class="status up hide">All operational</span>
-            <span class="status down ">Some outages</span>
+            <span class="status up">All operational</span>
+            <span class="status down hide">Some outages</span>
           </li>
 <!--
 # This is an example of an additional system whose status may eventually
@@ -190,30 +190,29 @@ function updateTime() {
             <span class="status down hide">Some outages</span>
           </li>
         </ul>
-        <h2>Incidents</h2>
 <!--
-# Maintenance - the date/time header part.
-# To show upcoming maintenance, remove the "hide" class from this date/time
+# Incident - the date/time header part.
+# To show an incident, remove the "hide" class from this date/time
 # header part (the h3 tag) AND from the message part below. When the
-# maintenance is actually in progress, remove the "hide" class from the
+# incident is actually in progress, remove the "hide" class from the
 # span tag.
 -->
+        <h2 class="hide">Incidents</h2>
         <h3 class="hide">
-          05/16/2018
-          <span class="inProgress hide">
+          12/19/2019
+          <span class="inProgress">
             In Progress
           </span>
         </h3>
 <!--
-# Maintenance - the message part.
-# To show upcoming maintenance, remove the "hide" class from this date/time
+# Incident - the message part.
+# To show an incident's message, remove the "hide" class from this date/time
 # header part (the div tag).
 -->
-        <div class="maintenanceStatus">
+        <div class="maintenanceStatus hide">
           <h4>Our external authentication provider is experiencing a critical disruption.  Logging in to the application may take a long time or fail.</h4>
           <p></p>
         </div>
-        <h2>Scheduled Maintenance</h2>
 <!--
 # Maintenance - the date/time header part.
 # To show upcoming maintenance, remove the "hide" class from this date/time
@@ -221,6 +220,7 @@ function updateTime() {
 # maintenance is actually in progress, remove the "hide" class from the
 # span tag.
 -->
+        <h2>Scheduled Maintenance</h2>
         <h3 class="">
           12/19/2019 9:00 PM - 12:00 AM EST
           <span class="inProgress hide">
