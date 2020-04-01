@@ -220,7 +220,7 @@ function updateTime() {
 # maintenance is actually in progress, remove the "hide" class from the
 # span tag.
 -->
-        <h2>Scheduled Maintenance</h2>
+        <h2 class="hide">Scheduled Maintenance</h2>
         <h3 class="hide">
           03/19/2020 10:00 PM - 12:00 AM EDT
           <span class="inProgress hide">
@@ -240,7 +240,7 @@ function updateTime() {
 # Maintenance - the date/time part.
 # Daily maintenance window for backups.
 -->
-        <h3 class="">
+        <h3 class="hide">
           Daily 11:00 PM - 11:30 PM EST
           <span class="hide inProgress">
             In Progress
@@ -250,7 +250,7 @@ function updateTime() {
 # Maintenance - the message part.
 # This part should always be shown since we have a daily maintenance windows from 11-11:30PM EST
 -->
-        <div class="maintenanceStatus">
+        <div class="hide maintenanceStatus">
           <h4>System Backups</h4>
           <p>Traverse will be unavailable for about 15 minutes in this maintenance window to perform system backups.</p>
         </div>
