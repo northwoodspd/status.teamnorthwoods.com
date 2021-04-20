@@ -194,7 +194,7 @@
 # some issues" line
 -->
       <h1 class="up hide">All systems operational.</h1>
-      <h1 class="maybe">Experiencing some issues.</h1>
+      <h1 class="maybe hide">Experiencing some issues.</h1>
       <div class="lastUpdated">
         <p>Page last refreshed on <span id="refreshTime"></span></p>
       </div>
@@ -206,8 +206,8 @@
 -->
         <li>
           <span>Traverse</span>
-          <span class="status up hide">All operational</span>
-          <span class="status down">Some outages</span>
+          <span class="status up">All operational</span>
+          <span class="status down hide">Some outages</span>
         </li>
         <!--
 # This is an example of an additional system whose status may eventually
@@ -227,8 +227,8 @@
 # incident is actually in progress, remove the "hide" class from the
 # span tag.
 -->
-      <h2 class="">Incidents</h2>
-      <h3 class="">
+      <h2 class="hide">Incidents</h2>
+      <h3 class="hide">
         04/20/2021
         <span class="inProgress">
           In Progress
@@ -239,7 +239,7 @@
 # To show an incident's message, remove the "hide" class from this date/time
 # header part (the div tag).
 -->
-      <div class="maintenanceStatus">
+      <div class="maintenanceStatus hide">
         <h4>Our external authentication provider is experiencing a critical disruption.</h4>
         <ul>
           <li>We are continuing to monitor the situation, but services appear to be recovering slowly.</li>
